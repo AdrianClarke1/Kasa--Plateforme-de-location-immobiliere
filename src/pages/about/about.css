@@ -1,0 +1,27 @@
+
+.aProposCover {
+    width: 100%;
+    margin: auto;
+    height: 220px;
+    position: relative;
+    background: #000000;
+    border-radius: 25px;
+}
+
+.aProposCover img {
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    border-radius: 25px;
+}
+
+.collapsiblesAbout {
+    margin: 0 10% 0 10%;
+}
+
+@media screen and (max-width: 768px){
+    .collapsiblesAbout {
+        margin:10% 0;
+    }
+}

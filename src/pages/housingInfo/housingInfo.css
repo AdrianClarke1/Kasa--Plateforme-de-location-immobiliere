@@ -1,0 +1,151 @@
+/* House Info Start */
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+    .title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        color: #FF6060;
+    }
+        .title h1 {
+            font-weight: 500;
+            font-size: 36px;
+            margin: 0;
+        }
+        .title h2 {
+            font-weight: 400;
+            font-size: 18px;
+            margin: 10px 0 20px 0;
+        }
+
+    .tagsContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content:flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+
+    .rating {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .rating .hostInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: fit-content;
+    
+    }
+
+        .rating .hostName {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 142.6%;
+            color: #FF6060;
+            margin: 0 10px;
+        }
+
+        .rating .hostImg {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            margin:0 10px;
+        }
+
+    .rating ul{
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: space-evenly;
+        
+        padding: 0;
+    }
+        .star {
+            color:#E3E3E3;
+            font-size: 30px;
+            margin: 10px;
+        }
+        .star-active {
+            color: #FF6060;
+            font-size: 30px;
+            margin: 10px;
+          
+        }
+/* House Info End */
+
+/* Collapsibles Start */
+
+.collapsiblesHousing {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+    .collapsibleWrap {
+        width: 45%;
+    }
+
+        .collapsible ul {
+            width: 100%;
+            margin: 1em 0;
+            padding: 0;
+        }
+
+/* Collapsibles End */
+
+@media screen and (max-width: 768px) {
+    .flexContainer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+        .title h1 {
+            font-size: 18px;
+        }
+        .title h2 {
+            font-size: 14px;
+        }
+
+        .rating {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+            .rating ul {
+                flex-wrap: wrap;
+            }
+
+            .rating .hostName {
+                font-size: 14px;
+            }
+
+            .rating .hostImg {
+                width: 32px;
+                height: 32px;
+            }
+                .star, .star-active {
+                    font-size: 15px;
+                    margin: 2px;
+                }
+
+    .collapsiblesHousing {
+        flex-direction: column;
+    }
+    .collapsibleWrap {
+        width: 100%;
+    }
+}

@@ -1,0 +1,50 @@
+.sectionIntro {
+    width: 100%;
+    margin: auto;
+    height: 220px;
+    position: relative;
+    background: #000000;
+    border-radius: 25px;
+}
+    
+    .sectionIntro img {
+        background-size:cover;
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+        border-radius: 25px;
+    }
+
+    .sectionIntro h1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    
+    color: #ffffff;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0
+    }
+
+@media screen and (max-width: 768px) {
+    .sectionIntro {
+        height: 100px;
+    }
+    
+    .sectionIntro h1 {
+        font-size: 24px;
+        left: 40%;
+    }
+
+    .sectionIntro {
+        border-radius: 10px;
+    }
+        
+        .sectionIntro img {
+            border-radius: 10px;
+        }
+}
