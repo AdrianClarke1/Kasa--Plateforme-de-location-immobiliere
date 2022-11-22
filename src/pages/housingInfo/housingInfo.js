@@ -28,15 +28,15 @@ function HousingInfo() {
             <div className='title'>
                 <h1 className='houseTitle'>{houseUpdated.title}</h1>
                 <h2 className='houseLocation'>{houseUpdated.location}</h2>
-                <div className='tagsContainer'>
+                <ul className='tagsContainer'>
                     {houseUpdated.tags.map((tag) => {
                         return (
-                            <Tag>
+                            <Tag key={tag+houseUpdated.id}>
                                 {tag}
                             </Tag>
                         )
                     })} 
-                </div>
+                </ul>
             </div>
             <div className='rating'>
                 <div className='hostInfo'>
@@ -46,9 +46,9 @@ function HousingInfo() {
                 <ul>    
                     {ratings.map((rating) => {
                         return houseUpdated.rating >= rating ? (
-                            <li key={ratings[rating]}className='star-active'><FaStar /></li>
+                            <li key={ratings[rating]+houseUpdated.id}className='star-active'><FaStar /></li>
                             ) : (
-                            <li key={ratings[rating]} className="star"><FaStar /></li>
+                            <li key={ratings[rating]+houseUpdated.id} className="star"><FaStar /></li>
                         );
                     })}
                 </ul>
@@ -68,7 +68,7 @@ function HousingInfo() {
                 <ul>
                     {houseUpdated.equipments.map((component) => {
                         return(
-                        <li>{component}</li>
+                        <li key={component+houseUpdated.id}>{component}</li>
                         )
                             
                     })}

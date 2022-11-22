@@ -2,7 +2,7 @@ import "./tag.css"
 
 function Tag(props) {
     return (
-        <div className="tag">{props.children}</div>
+        <li className="tag">{props.children}</li>
     )
 } 
 
